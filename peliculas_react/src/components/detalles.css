@@ -1,0 +1,25 @@
+.detailContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.imagen {
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.detalles {
+    font-size: 1.5rem;
+}
