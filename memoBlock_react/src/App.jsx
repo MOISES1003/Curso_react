@@ -48,6 +48,7 @@ function App() {
         setAnimation(false);
       }, 1000);
     }
+    
   }
   return <Tablero memoBlocks={memoblobarajas} handleMemoClick={manejarMemoClick} animation={animation} />;
 }
