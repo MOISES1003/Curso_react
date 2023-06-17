@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
-import "../components/NavBar.css";
+import "../NavBar/NavBar.css";
 import { IconContext } from "react-icons";
 import { useState } from "react";
+import * as AiIcons from "react-icons/ai";
+import * as FaIcons from "react-icons/fa";
+import * as IoIcons from 'react-icons/io';
 import { Data } from "./Data";
 
 export function NavBar() {
