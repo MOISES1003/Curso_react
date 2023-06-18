@@ -24,6 +24,18 @@ export const Data = [
       cName: "nav-text",
       icon: <IoIcons.IoIosPaper />,
       iconClosed: <RiIcons.RiArrowDownSFill/>,
-      iconOpened: <RiIcons.RiArrowUpSFill/>
+      iconOpened: <RiIcons.RiArrowUpSFill/>,
+      subNav:[
+        {
+          title: "Reportes 1",
+          path: "/reportes/reportes1",
+          icon: <IoIcons.IoIosPaper />,
+        },
+        {
+          title: "Reportes 2",
+          path: "/reportes/reportes2",
+          icon: <IoIcons.IoIosPaper />,
+        }
+      ]
     },
   ];

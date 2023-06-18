@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../NavBar/NavBar.css";
 import { IconContext } from "react-icons";
 import { useState } from "react";
+import { SubMenu } from "./SubMenu";
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 import { Data } from "./Data";
@@ -23,7 +24,7 @@ export function NavBar() {
                 <AiIcons.AiOutlineClose  onClick={showSidebar}/>  
               </NavIcon>
               {Data.map((item,index)=>{
-                  
+                  return <SubMenu key={index} item={item} close={showSidebar}/>
               })} 
             </SidebarWrap>
           </SidebarNav>
