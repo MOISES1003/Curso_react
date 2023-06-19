@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Ganancias } from "../components/Ganancias";
 import { Info } from "../components/Info";
 import { Projects } from "../components/Projects";
-
+import { Facturas } from "../components/Facturas";
 
 export function Home() {
   return (
@@ -22,6 +22,16 @@ export function Home() {
             </Projects>
             </ColumnA2>
         </SectionA>
+        <SectionB>
+          <ColumnB1>
+          <InvoiceContainer>
+            <TitleText>
+              Facturas recientes
+            </TitleText>
+            <Facturas/>
+          </InvoiceContainer>
+          </ColumnB1>
+        </SectionB>
       </SubContainer>
     </Container>
   );
@@ -92,4 +102,43 @@ const ColumnA2 = styled.div`
 const TitleText = styled.h3`
 height: 20%;
 
+`;
+
+const SectionB = styled.div`
+  display: flex;
+  gap: 2rem;
+  height: 26vh;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+  }
+`;
+const ColumnB1 = styled.div`
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+`;
+const ColumnB2 = styled.div`
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+`;
+const InvoiceContainer = styled.div`
+  height: 60%;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 `;
