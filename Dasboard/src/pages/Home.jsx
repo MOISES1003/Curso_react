@@ -48,10 +48,9 @@ export function Home() {
 const Container = styled.div`
   width: 80%;
   border-bottom-right-radius: 2rem;
-  /* background:linear-gradient(to bottom right, white 0%, #e6e4ff 70%); */
+  background:linear-gradient(to bottom right, white 0%, #e6e4ff 70%);
   border-top-right-radius: 2rem;
   margin: 1rem 8rem 1rem 4rem;
-  background: red;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
@@ -66,7 +65,6 @@ const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background: green;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: 100%;
   }
