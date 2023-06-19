@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Ganancias } from "../components/Ganancias";
-
+import { Info } from "../components/Info";
 export function Home() {
   return (
     <Container>
@@ -8,7 +8,13 @@ export function Home() {
         <SectionA>
             <ColumnA1>
             <Ganancias/>
+            <Info/>
             </ColumnA1>
+            <ColumnA2>
+            <TitleText>
+               Tus Proyectos
+            </TitleText>
+            </ColumnA2>
         </SectionA>
       </SubContainer>
     </Container>
@@ -42,7 +48,6 @@ const SubContainer = styled.div`
     height: 100%;
   }
 `;
-
 const SectionA = styled.div`
   display: flex;
   justify-content: space-between;
@@ -65,4 +70,20 @@ const ColumnA1 = styled.div`
     gap: 1rem;
     width: 100%;
   }
+`;
+const ColumnA2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 115%;
+  width: 100%;
+  gap: 3rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+const TitleText = styled.h3`
+height: 20%;
+
 `;
