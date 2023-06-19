@@ -3,6 +3,7 @@ import { Ganancias } from "../components/Ganancias";
 import { Info } from "../components/Info";
 import { Projects } from "../components/Projects";
 import { Facturas } from "../components/Facturas";
+import { Recomendados } from "../components/Recomendados";
 
 export function Home() {
   return (
@@ -31,6 +32,12 @@ export function Home() {
             <Facturas/>
           </InvoiceContainer>
           </ColumnB1>
+          <ColumnB2>
+          <TitleText>
+            Proyectos recomendados
+          </TitleText>
+          <Recomendados/>
+          </ColumnB2>
         </SectionB>
       </SubContainer>
     </Container>
