@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Ganancias } from "../components/Ganancias";
 import { Info } from "../components/Info";
+import { Projects } from "../components/Projects";
+
+
 export function Home() {
   return (
     <Container>
@@ -14,6 +17,9 @@ export function Home() {
             <TitleText>
                Tus Proyectos
             </TitleText>
+            <Projects>
+                
+            </Projects>
             </ColumnA2>
         </SectionA>
       </SubContainer>
