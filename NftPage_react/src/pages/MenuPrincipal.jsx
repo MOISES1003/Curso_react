@@ -1,5 +1,10 @@
+import { Navigation } from "../components/Navigation"
+
 export function MenuPrincipal(){
     return(
-        <h1>MenuPrincipal</h1>
+        <main>
+            <Navigation/>
+        </main>
+        
     )
 }
