@@ -1,24 +1,32 @@
-import { createGlobalStyle } from "styled-components";
-import "@fontsource/sora";
-import "@fontsource/akaya-telivigala";
-export const GlobalStyles = createGlobalStyle`
-    *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-
-    }
-    body{
-        font-family: 'Sora', sans-serif;
-        overflow-x:hidden;
-        
-    }
-    h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
+export const Light ={
+    body: "#fff",
+    text: "#202020",
+    bodyRgba: "255, 255, 255",
+    textRgba: "32,32,32",
+    carouselColor: "#EEEDDE",
+    fontxs: "0.75em",
+    fontsm: "0.875em",
+    fontmd: "1em",
+    fontlg: "1.25em",
+    fontxl: "2em",
+    fontxxl: "3em",
+    fontxxxl: "4em",
+    fontButton: "0.875em",
+    navHeight: "5rem",
 }
-a{
-    color: inherit;
-    text-decoration:none;
-}
-`;
+export const Dark = {
+    body: "#202020",
+    text: "#fff",
+    bodyRgba: "32,32,32",
+    textRgba: "255, 255, 255",
+    carouselColor: "#EEEDDE",
+    fontxs: "0.75em",
+    fontsm: "0.875em",
+    fontmd: "1em",
+    fontlg: "1.25em",
+    fontxl: "2em",
+    fontxxl: "3em",
+    fontxxxl: "4em",
+    fontButton: "0.875em",
+    navHeight: "5rem",
+  };

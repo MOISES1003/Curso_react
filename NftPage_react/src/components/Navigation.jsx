@@ -1,5 +1,21 @@
+import styled from "styled-components"
+
 export function Navigation(){
     return(
-        <h1>Navigation</h1>
+        <Section>
+            hola
+        </Section>
     )
 }   
+
+
+/*---------------Estilos-----------------*/
+
+//estilos de la seccion
+const Section = styled.section`
+width: 100vw;
+/* height: 100vh; */
+background-color: ${(props)=>props.theme.body};
+
+
+`;
