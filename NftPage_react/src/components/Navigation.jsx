@@ -4,8 +4,15 @@ import { useState } from "react";
 
 export function Navigation() {
   const [click, setClick] = useState(false);
+  const scrollTo = (id)=>{
+    let element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior:"smooth",block:"start",inline: "nearest"
+    });
+    setClick(!click);
+  }
   return (
-    <Section>
+    <Section id="navigation">
       <NavBar>
         <Logo />
         <HamburgerMenu
@@ -13,7 +20,7 @@ export function Navigation() {
           onClick={() => setClick(!click)}
         ></HamburgerMenu>
         <Menu click={click}>
-          <MenuItem>hola</MenuItem>
+          <MenuItem onClick={()=>scrollTo("home")}>hola</MenuItem>
         </Menu>
       </NavBar>
     </Section>
@@ -22,7 +29,7 @@ export function Navigation() {
 
 /*---------------Estilos-----------------*/
 
-//estilos de la seccion
+//estilos deL menu
 const Section = styled.section`
   width: 100vw;
   /* height: 100vh; */
