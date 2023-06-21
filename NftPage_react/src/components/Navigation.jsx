@@ -20,7 +20,8 @@ export function Navigation() {
           onClick={() => setClick(!click)}
         ></HamburgerMenu>
         <Menu click={click}>
-          <MenuItem onClick={()=>scrollTo("home")}>hola</MenuItem>
+          <MenuItem onClick={()=>scrollTo("home")}>Home</MenuItem>
+          <MenuItem onClick={()=>scrollTo("about")}>Acerca de</MenuItem>
         </Menu>
       </NavBar>
     </Section>
