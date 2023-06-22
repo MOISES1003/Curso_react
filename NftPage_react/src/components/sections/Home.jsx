@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { TypeWriterText } from "../TypeWriterText";
-
+import { CoverVideo } from "../ConverVideo";
 
 
 export function Home(){
@@ -9,6 +9,9 @@ export function Home(){
             <Container>
                 <Box>
                 <TypeWriterText/>
+                </Box>
+                <Box>
+                    <CoverVideo/>
                 </Box>
             </Container>
         </Section>
@@ -27,6 +30,7 @@ const Container = styled.div`
     width: 75%;
     height: 80vh;
     margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     @media (max-width: 64em) {

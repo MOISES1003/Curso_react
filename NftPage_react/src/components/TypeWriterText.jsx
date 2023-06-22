@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import { Button } from "./Button";
-
 export function TypeWriterText() {
   return (
     <>
@@ -29,7 +28,10 @@ export function TypeWriterText() {
       </Title>
       <SubTitle>react es cool 💜</SubTitle>
       <ButtonContainer>
-        <Button text="Explorar Curso"/>
+        <Button
+          text="Explorar Curso"
+          link="https://github.com/MOISES1003/Curso_react"
+        />
       </ButtonContainer>
     </>
   );
