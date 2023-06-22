@@ -25,7 +25,7 @@ export function Home() {
 
 /*------ESTILOS----- */
 const Section = styled.section`
-  min-height: ${(props) => `calc(100vh-${props.theme.navHeight})`};
+  min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
   width: 100vw;
   position: relative;
   background-color: ${(props) => props.theme.body};
@@ -72,5 +72,15 @@ const Round = styled.div`
     width: 100%;
     height:auto;
     animation: ${rotate} 6s linear infinite reverse;
+  }
+  @media (max-width: 64em) {
+    width:4em;
+    height:4em;
+    left: none;
+    right: 2rem;
+    bottom: 100%;
+  }
+  @media (max-width: 48em) {
+            right: 1rem;
   }
 `;
