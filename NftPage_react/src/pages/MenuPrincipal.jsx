@@ -11,8 +11,7 @@ export function MenuPrincipal() {
       <GlobalStyles />
       <ThemeProvider theme={Light}>
         <Navigation />
-        <Home>
-        </Home>
+        <Home/>
         <About>      
         </About>
       </ThemeProvider>

@@ -45,6 +45,11 @@ const Title = styled.h2`
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   transition: all 0.5s ease-in-out;
+  span{
+    text-transform: uppercase;
+    font-family: "Akaya Telivigala",cursive;
+
+  }
   .text-1 {
     color: blue;
   }

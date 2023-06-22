@@ -1130,6 +1130,11 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.43.0.tgz"
   integrity sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==
 
+"@fontsource/akaya-telivigala@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.npmjs.org/@fontsource/akaya-telivigala/-/akaya-telivigala-5.0.3.tgz"
+  integrity sha512-dSxhuFe3Jvov7FQbkUgXcxxwPfXzymp+8XBRWDozlNy6fSFlMQUTCSOAp3sziAfMXCtujtbox5YLpJI5HcxufQ==
+
 "@fontsource/sora@^5.0.3":
   version "5.0.3"
   resolved "https://registry.npmjs.org/@fontsource/sora/-/sora-5.0.3.tgz"
