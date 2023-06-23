@@ -4,6 +4,7 @@ import { Light } from "../styles/Themes";
 import { ThemeProvider } from "styled-components"; //esto es parte del styled components siendo una palabra reservada
 import { Home } from "../components/sections/Home";
 import { About } from "../components/sections/About";
+import { RoadMap } from "../components/sections/RoadMap";
 
 export function MenuPrincipal() {
   return (
@@ -12,8 +13,8 @@ export function MenuPrincipal() {
       <ThemeProvider theme={Light}>
         <Navigation />
         <Home/>
-        <About>      
-        </About>
+        <About/>
+        <RoadMap/>
       </ThemeProvider>
     </main>
   );
