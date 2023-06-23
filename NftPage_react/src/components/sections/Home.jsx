@@ -11,7 +11,6 @@ export function Home() {
         <Box>
           <TypeWriterText />
         </Box>
-
         <Box>
           <CoverVideo />
         </Box>
