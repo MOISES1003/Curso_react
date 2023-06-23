@@ -1,12 +1,12 @@
 import styled from "styled-components";
-
+import { DrawSvg } from "../DrawSvg";
 export function RoadMap() {
   return (
     <Section id="roadmap">
       <Title>Road map</Title>
       <Container>
         <SvgContainer>
-            
+            <DrawSvg/>
         </SvgContainer>
       </Container>
     </Section>
