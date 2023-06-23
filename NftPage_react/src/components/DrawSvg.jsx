@@ -17,19 +17,38 @@ export function DrawSvg() {
         let element = ref.current;
         let svg = document.getElementsByClassName("svg-path")[0];
         const leng = svg.getTotalLength();
-        let t1 = gsap.timeline({
+        //comenzar a posicionar el dibujo svg
+        svg.style.strokeDasharray = leng;
+        // Ocultar svg antes de comenzar a desplazarse
+        svg.style.strokeDashoffset = leng;
+        
+        let recorrido = gsap.timeline({
             scrollTrigger:{
                 trigger:element,
+                start: "top center",
+                end:"bottom bottom",
                 onUpdate:(self)=>{
                     const draw = leng * self.progress;
-                }
+                    svg.style.strokeDashoffset=leng-draw;
+                },
+                ontoggle: self=>{
+                    if(self.isActive){
+                       
+                        ballRef.current.style.display="none"
+                    }else{
+                        ballRef.current.style.display="inline-block";
+                    }
+                } 
             }
         })
+        return ()=>{
+            if(recorrido) recorrido.kill();
+        }
     },[])
   return (
     <>
-      <Ball />
-      <VectorContainer>
+      <Ball ref={ballRef} />
+      <VectorContainer ref={ref}>
         <Vector/>
       </VectorContainer>
     </>
