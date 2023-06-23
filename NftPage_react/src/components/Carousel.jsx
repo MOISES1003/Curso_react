@@ -2,7 +2,7 @@ import styled from "styled-components";
 // Import Swiper React components
 // import Swiper core and required modules
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { EffectCards,Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -20,20 +20,21 @@ import img7 from "../assets/Nfts/bighead-6.svg";
 import img8 from "../assets/Nfts/bighead-7.svg";
 import img9 from "../assets/Nfts/bighead-8.svg";
 import img10 from "../assets/Nfts/bighead-9.svg";
+import arrow from "../assets/Arrow.svg"
+
 
 export function Carousel() {
   return (
     <Container>
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        modules={[EffectCards,Navigation, Pagination, Scrollbar, A11y]}
+        navigation={true}
+        pagination={{ type:"fraction" }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        effect={"cards"}
+       
       >
         <SwiperSlide>
           <img src={img1} width={500} height={400} alt="Nft" />
@@ -95,5 +96,29 @@ const Container = styled.div`
   .swiper-slide {
     background-color: ${(props) => props.theme.carouselColor};
     border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        display: block;
+        width:100%;
+        height: auto;
+        object-fit: cover
+    }
+  }
+  .swiper-button-next{
+    color: ${(props)=>props.theme.text};
+    right: 0;
+    width: 4rem;
+    top: 60%;
+    background-image:url(${arrow});
+    background-position: center;
+    background-size: cover;
+    &::after{
+        display: none;
+    }
+    @media (max-width: 64em) {
+        width: 3rem;
+    }
   }
 `;
