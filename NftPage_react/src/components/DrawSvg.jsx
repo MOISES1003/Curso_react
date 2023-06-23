@@ -1,8 +1,31 @@
 import styled, { keyframes } from "styled-components";
 import Vector from "../components/icons/Vector"
+import  gsap  from  "gsap" ;
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useLayoutEffect,useRef } from "react";
+
+
+
 
 
 export function DrawSvg() {
+
+    const ref = useRef(null);
+    const ballRef = useRef(null);
+    gsap.registerPlugin(ScrollTrigger); //referenciar para el uso de scroll o disparador
+    useLayoutEffect(()=>{
+        let element = ref.current;
+        let svg = document.getElementsByClassName("svg-path")[0];
+        const leng = svg.getTotalLength();
+        let t1 = gsap.timeline({
+            scrollTrigger:{
+                trigger:element,
+                onUpdate:(self)=>{
+                    const draw = leng * self.progress;
+                }
+            }
+        })
+    },[])
   return (
     <>
       <Ball />
@@ -47,5 +70,8 @@ const VectorContainer = styled.div`
     display: inline-block;
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 48em) {
+    left: 1rem;
   }
 `;
