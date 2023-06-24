@@ -10,10 +10,10 @@ export function RoadMap() {
         </SvgContainer>
         <Items>
           <RoadMapItem subtitle={"sub texto"} subtext={"texto del cotenido"} />
-          <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem />
+          <RoadMapItem subtitle={"sub texto"} subtext={"texto del cotenido"} />
+          <RoadMapItem subtitle={"sub texto"} subtext={"texto del cotenido"} />
+          <RoadMapItem subtitle={"sub texto"} subtext={"texto del cotenido"} />
+          <RoadMapItem subtitle={"sub texto"} subtext={"texto del cotenido"} />
         </Items>
       </Container>
     </Section>
