@@ -10,6 +10,7 @@ import img7 from "../../assets/Nfts/bighead-6.svg";
 import img8 from "../../assets/Nfts/bighead-7.svg";
 import img9 from "../../assets/Nfts/bighead-8.svg";
 import img10 from "../../assets/Nfts/bighead-9.svg";
+import { ConfettiComp } from "../ConfettiComp";
 // import ETH from "../../assets/icons8-ethereum-48.png";
 
 const MemberComponent = ({ img, name = " ", position = " " }) => {
@@ -27,6 +28,7 @@ const MemberComponent = ({ img, name = " ", position = " " }) => {
 export function Team() {
   return (
     <Section id="team">
+    <ConfettiComp></ConfettiComp>
       <Title>Team</Title>
       <Container>
         <MemberComponent img={img1} name="Montenegro" position="Founder" />
