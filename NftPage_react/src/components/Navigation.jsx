@@ -26,6 +26,7 @@ export function Navigation() {
           <MenuItem onClick={() => scrollTo("about")}>Acerca de</MenuItem>
           <MenuItem onClick={() => scrollTo("roadmap")}>Road Map</MenuItem>
           <MenuItem onClick={() => scrollTo("showcase")}>showcase</MenuItem>
+          <MenuItem onClick={() => scrollTo("team")}>Team</MenuItem>
         </Menu>
       </NavBar>
     </Section>

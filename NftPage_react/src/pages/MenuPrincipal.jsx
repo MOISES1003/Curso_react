@@ -6,6 +6,7 @@ import { Home } from "../components/sections/Home";
 import { About } from "../components/sections/About";
 import { RoadMap } from "../components/sections/RoadMap";
 import { ShowCase } from "../components/sections/ShowCase";
+import { Team } from "../components/sections/Team";
 export function MenuPrincipal() {
   return (
     <main>
@@ -16,6 +17,7 @@ export function MenuPrincipal() {
         <About/>
         <RoadMap/>
         <ShowCase/>
+        <Team/>
       </ThemeProvider>
     </main>
   );
