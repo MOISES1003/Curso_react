@@ -5,6 +5,7 @@ import Facebook from "../icons/Facebook";
 import LinkedIn from "../icons/Linkedln";
 import Twitter from "../icons/Twitter";
 import Instagram from "../icons/Instagram";
+import { Banner } from "../Banner";
 
 
 
@@ -19,6 +20,9 @@ export function Footer(){
     }
     return(
         <Section>
+          <Banner>
+            
+          </Banner>
             <Container>
                 <Left>
                     <Logo/>
@@ -46,6 +50,13 @@ export function Footer(){
                 <Item onClick={()=>scrollTo("preguntas")}>Preguntas</Item>
                 </MenuItems>
             </Container>
+            <Bottom>
+                <span>&copy;{new Date().getFullYear()} </span>
+                <span>react &#10084;{" "} </span>
+                <a href="#" target="_blank">
+                    My Page
+                </a>
+            </Bottom>
         </Section>
     )
 }
