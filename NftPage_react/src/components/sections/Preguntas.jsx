@@ -10,6 +10,17 @@ export function Preguntas() {
       <Container>
         <Box>
           <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+        </Box>
+        <Box>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
+          <Acordeon title="preguntas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium sint cupiditate enim rem nemo, dolor eligendi fuga iste aliquid a quam delectus veniam, placeat velit asperiores, aperiam eaque quis!</Acordeon>
         </Box>
       </Container>
     </Section>

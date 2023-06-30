@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
-
+import {Minus} from "../components/icons/Minus";
+import {Plus} from "../components/icons/Plus";
 export function Acordeon({ title, children }) {
   const [collapse, setCollapse] = useState(false);
 //   useEffect(() => {
@@ -13,6 +14,14 @@ export function Acordeon({ title, children }) {
         <Name>
           <span>{title}</span>
         </Name>
+        {
+          collapse?<Indicator>
+            <Minus/>
+          </Indicator>:
+          <Indicator>
+              <Plus/>
+          </Indicator>
+        }
       </Title>
       <Reveal clicked={collapse}>
         {children}
