@@ -9,6 +9,7 @@ import { ShowCase } from "../components/sections/ShowCase";
 import { Team } from "../components/sections/Team";
 import { Preguntas } from "../components/sections/Preguntas";
 import { Footer } from "../components/sections/Footer";
+import { ScrollTo } from "../components/ScrollTo";
 export function MenuPrincipal() {
   return (
     <main>
@@ -22,6 +23,7 @@ export function MenuPrincipal() {
         <Team/>
         <Preguntas/>
         <Footer/>
+        <ScrollTo/>
       </ThemeProvider>
     </main>
   );

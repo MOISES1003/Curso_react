@@ -23,7 +23,7 @@ import img9 from "../assets/Nfts/bighead-8.svg";
 import img10 from "../assets/Nfts/bighead-9.svg";
 import arrow from "../assets/Arrow.svg";
 
-export function Carousel() {
+export default function Carousel() {
   return (
     <Container>
       <Swiper
