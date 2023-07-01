@@ -1,18 +1,23 @@
 import styled,{keyframes} from "styled-components";
-import { TypeWriterText } from "../TypeWriterText";
-import { CoverVideo } from "../ConverVideo";
 import ImgReact from "../../assets/react.png";
-
-
+import { Suspense, lazy } from "react";
+import {Loading} from "../Loading";
+const TypeWriterText = lazy(()=>import("../TypeWriterText"));
+const CoverVideo = lazy(()=>import("../ConverVideo"))
 export function Home() {
   return (
     <Section id="home">
       <Container>
         <Box>
-          <TypeWriterText />
+          <Suspense fallback={<Loading/>}>
+            <TypeWriterText />
+          </Suspense>
+          
         </Box>
         <Box>
-          <CoverVideo />
+          <Suspense fallback={<Loading/>}>
+              <CoverVideo />
+          </Suspense>   
         </Box>
         <Round>
         <img src={ImgReact} width={500} height={400} alt="React"/>
